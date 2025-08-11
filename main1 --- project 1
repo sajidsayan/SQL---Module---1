@@ -1,0 +1,16 @@
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    grade INT
+);
+
+INSERT INTO Students (student_id, first_name, last_name, grade) VALUES
+(1, 'Ayesha', 'Rahman', 85),
+(2, 'Imran', 'Hossain', 92),
+(3, 'Sadia', 'Karim', 76);
+
+SELECT * FROM Students;
+
+SELECT * FROM Students
+WHERE grade >= 80;
